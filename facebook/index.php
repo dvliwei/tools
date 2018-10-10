@@ -54,13 +54,12 @@ if(!$redis->exists($key)){
 
     if($response->getStatus() === 200) {
         //输出抓取内容
-        $str = $redis->setex($key, 3600,base64_encode(gzdeflate($response->getContent())));
+        $str =base64_encode(gzdeflate($response->getContent()));
+        $redis->setex($key, 3600,$str);
         //获取内容后的处理
     }
 }else{
     $str = $redis->get($key);
 }
-
-
 
 echo $str;
