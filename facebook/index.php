@@ -12,8 +12,8 @@ use JonnyW\PhantomJs\Client;
 //$client = Client:
 $client = Client::getInstance();
 
-//$client->getEngine()->setPath("/opt/onemena/wwwroot/mobibookapp.com/project_web_tools/bin/linux/phantomjs");
-$client->getEngine()->setPath("/Applications/MAMP/htdocs/project_web_tools/bin/mac/phantomjs");
+$client->getEngine()->setPath("/opt/onemena/wwwroot/mobibookapp.com/project_web_tools/bin/linux/phantomjs");
+//$client->getEngine()->setPath("/Applications/MAMP/htdocs/project_web_tools/bin/mac/phantomjs");
 $client->isLazy(); // 让客户端等待所有资源加载完毕
 
 $request  = $client->getMessageFactory()->createRequest();
