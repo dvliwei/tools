@@ -8,7 +8,7 @@
 
 $client = \JonnyW\PhantomJs\Client::getInstance();
 
-$client->getEngine()->setPath("/Applications/MAMP/htdocs/project_web_tools/bin/phantomjs");
+$client->getEngine()->setPath("/opt/onemena/wwwroot/mobibookapp.com/project_web_tools/bin/linux/phantomjs");
 $client->isLazy(); // 让客户端等待所有资源加载完毕
 
 $request  = $client->getMessageFactory()->createRequest();
