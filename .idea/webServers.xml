@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="db91ce27-e06f-472f-990c-18a9ba6955fa" name="189 tools" url="http://119.28.179.189">
+        <fileTransfer host="119.28.179.189" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/opt/onemena/wwwroot/mobibookapp.com/project_web_tools" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

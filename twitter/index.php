@@ -14,13 +14,35 @@ $settings = array(
     'consumer_secret' => "382DgiVxnRuYDm8txoQzi60fcIwwnWaX2XmETEXkJFeniNaIkB"
 );
 
-$url = 'https://api.twitter.com/1.1/followers/ids.json';
-$getfield = '?screen_name=J7mbo';
+//$url = 'https://api.twitter.com/1.1/followers/ids.json';
+//$getfield = '?screen_name=J7mbo';
+//$requestMethod = 'GET';
+
+//根据用户名称查询用户信息接口
+//$url = 'https://api.twitter.com/1.1/users/show.json';
+//$getfield = '?screen_name=Howlong0419';
+//$requestMethod = 'GET';
+
+//根据关键字搜索推文信息接口
+//$url = 'https://api.twitter.com/1.1/search/tweets.json';
+//$getfield = '?q=nasa&result_type=popular';
+//$requestMethod = 'GET';
+
+
+//根据推文id获取具体信息包含推文用户信息
+//twitter中的回复也是一条推文
+$url = 'https://api.twitter.com/1.1/statuses/show.json';
+$getfield = '?id=1043914454998515712';
 $requestMethod = 'GET';
 
 
+//更具用户名获取用户最新的推文信息
+//$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+//$getfield = '?screen_name=SaudiVision2030&count=6';
+//$requestMethod = 'GET';
+
 $twitter = new TwitterAPIExchange($settings);
-var_dump($twitter);
+
 echo $twitter->setGetfield($getfield)
     ->buildOauth($url, $requestMethod)
     ->performRequest();
