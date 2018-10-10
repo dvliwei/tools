@@ -6,7 +6,10 @@
  * Time: 下午2:06
  */
 
-$client = \JonnyW\PhantomJs\Client::getInstance();
+use JonnyW\PhantomJs\Client;
+//require_once("../vendor/jonnyw/php-phantomjs/src/JonnyW/PhantomJs/Client.php");
+//$client = Client:
+$client = Client::getInstance();
 
 $client->getEngine()->setPath("/opt/onemena/wwwroot/mobibookapp.com/project_web_tools/bin/linux/phantomjs");
 $client->isLazy(); // 让客户端等待所有资源加载完毕
