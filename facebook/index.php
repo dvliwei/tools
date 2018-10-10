@@ -23,7 +23,7 @@ $request->setTimeout(5000); // 设置超时时间(超过这个时间停止加载
 $link = "https://www.facebook.com/AmrDiabsLovers/";
 //设置请求方法
 $request->setMethod('GET');
-
+$request->setHeaders(["user-agent"=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"]);
 //$request->getEngine()->addOption('--cookies-file=cookies.txt');
 
 //设置请求连接
@@ -33,6 +33,6 @@ $client->send($request, $response);
 
 if($response->getStatus() === 200) {
     //输出抓取内容
-    echo $response->getContent();
+    echo base64_encode($response->getContent());
     //获取内容后的处理
 }
