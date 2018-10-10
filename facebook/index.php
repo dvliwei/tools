@@ -5,13 +5,15 @@
  * Date: 2018/10/10
  * Time: 下午2:06
  */
+require __DIR__ . '/../vendor/autoload.php';
 
 use JonnyW\PhantomJs\Client;
 //require_once("../vendor/jonnyw/php-phantomjs/src/JonnyW/PhantomJs/Client.php");
 //$client = Client:
 $client = Client::getInstance();
 
-$client->getEngine()->setPath("/opt/onemena/wwwroot/mobibookapp.com/project_web_tools/bin/linux/phantomjs");
+//$client->getEngine()->setPath("/opt/onemena/wwwroot/mobibookapp.com/project_web_tools/bin/linux/phantomjs");
+$client->getEngine()->setPath("/Applications/MAMP/htdocs/project_web_tools/bin/mac/phantomjs");
 $client->isLazy(); // 让客户端等待所有资源加载完毕
 
 $request  = $client->getMessageFactory()->createRequest();
@@ -22,7 +24,7 @@ $link = "https://www.facebook.com/AmrDiabsLovers/";
 //设置请求方法
 $request->setMethod('GET');
 
-$request->getEngine()->addOption('--cookies-file=cookies.txt');
+//$request->getEngine()->addOption('--cookies-file=cookies.txt');
 
 //设置请求连接
 $request->setUrl($link);
