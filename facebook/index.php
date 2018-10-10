@@ -5,6 +5,8 @@
  * Date: 2018/10/10
  * Time: 下午2:06
  */
+$link = urldecode($_GET['url']);
+
 require __DIR__ . '/../vendor/autoload.php';
 
 use JonnyW\PhantomJs\Client;
@@ -20,7 +22,7 @@ $request  = $client->getMessageFactory()->createRequest();
 $response = $client->getMessageFactory()->createResponse();
 $request->setTimeout(5000); // 设置超时时间(超过这个时间停止加载并渲染输出画面)
 
-$link = "https://www.facebook.com/AmrDiabsLovers/";
+//$link = "https://www.facebook.com/AmrDiabsLovers/";
 //设置请求方法
 $request->setMethod('GET');
 $request->setHeaders(["user-agent"=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"]);
