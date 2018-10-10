@@ -35,6 +35,6 @@ $client->send($request, $response);
 
 if($response->getStatus() === 200) {
     //输出抓取内容
-    echo base64_encode($response->getContent());
+    echo base64_encode(gzencode($response->getContent()));
     //获取内容后的处理
 }
