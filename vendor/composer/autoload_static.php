@@ -26,6 +26,7 @@ class ComposerStaticInit743e2a91466e35e0c13c3d681f7c00ca
         'P' => 
         array (
             'Psr\\Container\\' => 14,
+            'Predis\\' => 7,
             'PhantomInstaller\\Test\\' => 22,
         ),
     );
@@ -58,6 +59,10 @@ class ComposerStaticInit743e2a91466e35e0c13c3d681f7c00ca
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Predis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
         'PhantomInstaller\\Test\\' => 
         array (
