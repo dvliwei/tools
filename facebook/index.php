@@ -7,8 +7,7 @@
  */
 
 
-$link = urldecode($_GET['url']);
-
+$link = $_GET['url'];
 require __DIR__ . '/../vendor/autoload.php';
 
 
@@ -44,7 +43,7 @@ if(!$redis->exists($key)){
 //$link = "https://www.facebook.com/AmrDiabsLovers/";
 //设置请求方法
     $request->setMethod('GET');
-//$request->setHeaders(["user-agent"=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"]);
+    $request->setHeaders(["user-agent"=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"]);
 //$request->getEngine()->addOption('--cookies-file=cookies.txt');
 
 //设置请求连接
