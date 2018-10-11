@@ -19,9 +19,9 @@ $settings = array(
 //$requestMethod = 'GET';
 
 //根据用户名称查询用户信息接口
-//$url = 'https://api.twitter.com/1.1/users/show.json';
-//$getfield = '?screen_name=Howlong0419';
-//$requestMethod = 'GET';
+$url = 'https://api.twitter.com/1.1/users/show.json';
+$getfield = '?screen_name=SaudiVision2030';
+$requestMethod = 'GET';
 
 //根据关键字搜索推文信息接口
 //$url = 'https://api.twitter.com/1.1/search/tweets.json';
@@ -31,9 +31,9 @@ $settings = array(
 
 //根据推文id获取具体信息包含推文用户信息
 //twitter中的回复也是一条推文
-$url = 'https://api.twitter.com/1.1/statuses/show.json';
-$getfield = '?id=1043914454998515712';
-$requestMethod = 'GET';
+//$url = 'https://api.twitter.com/1.1/statuses/show.json';
+//$getfield = '?id=1043914454998515712';
+//$requestMethod = 'GET';
 
 
 //更具用户名获取用户最新的推文信息
