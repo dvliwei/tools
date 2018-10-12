@@ -2,6 +2,7 @@
     "require": {
         "j7mbo/twitter-api-php": "^1.0",
         "jonnyw/php-phantomjs": "4.*",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "electrolinux/phpquery": "^0.9.6"
     }
 }
