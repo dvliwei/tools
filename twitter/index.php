@@ -31,15 +31,15 @@ $settings = array(
 
 //根据推文id获取具体信息包含推文用户信息
 //twitter中的回复也是一条推文
-//$url = 'https://api.twitter.com/1.1/statuses/show.json';
-//$getfield = '?id=1043914454998515712';
-//$requestMethod = 'GET';
+$url = 'https://api.twitter.com/1.1/statuses/show.json';
+$getfield = '?id=1050034238089768960';
+$requestMethod = 'GET';
 
 
 //更具用户名获取用户最新的推文信息
-$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-$getfield = '?screen_name=SaudiVision2030&count=6';
-$requestMethod = 'GET';
+//$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+//$getfield = '?screen_name=SaudiVision2030&count=6';
+//$requestMethod = 'GET';
 
 $twitter = new TwitterAPIExchange($settings);
 
